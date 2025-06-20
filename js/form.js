@@ -146,13 +146,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Estrutura CORRIGIDA conforme erro da BlackCat
             const requestBody = {
-                amount: 100,
+                amount: 6190,
                 paymentMethod: 'pix',
                 items: [
                     {
                         title: 'Tarifa Transacional 2025', // CORRIGIDO: title em vez de name
                         quantity: 1,
-                        unitPrice: 100, // CORRIGIDO: unitPrice em vez de price
+                        unitPrice: 6190, // CORRIGIDO: unitPrice em vez de price
                         tangible: false // ADICIONADO: campo obrigatório
                     }
                 ],
@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const transactionData = {
                     ...responseData,
                     customer: formData,
-                    amount: 100,
+                    amount: 6190,
                     description: 'Tarifa Transacional 2025'
                 };
 
